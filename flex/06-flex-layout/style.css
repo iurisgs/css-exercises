@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -25,3 +27,57 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+.footer, .header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  padding: 0 20px;
+}
+
+.container {
+  flex:1;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input, .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  gap: 5px;
+}
+
+.button-info {
+  padding: 5px 15px;
+}
+
+/* fica mais clean juntando classes
+
+ .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+}
+*/
